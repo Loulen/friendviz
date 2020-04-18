@@ -2,3 +2,9 @@ data/*
 *.gif
 *.pickle
 .ipynb_checkpoints/*
+*.mp4
+build/
+eel_example/
+dist/
+*.spec
+*.bak

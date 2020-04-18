@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+        <script type="text/javascript" src="/eel.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet" href="./css/custom.css">
+        <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+
+        <title>FriendViz</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-title">FriendViz</div>
+            <div class="header-subtitle">I was bored and nostalgic during a global pandemic</div>
+        </div>
+        <div class="tuto">
+            <div class="tuto-header">
+                <div class="tuto-header-divider divider"></div>
+                <div class="tuto-header-text">
+                    How to use ?
+                </div>
+            </div>
+            <div class="tuto-step tuto-step-1">
+                <div class="tuto-step-text">
+                    1. Download yout facebook messages data. <br>
+                       - JSON format <strong>required</strong>. <br>
+                       - low quality images recommended.
+                </div>
+                <a href="https://www.facebook.com/help/212802592074644" class="tuto-step-tooltip tooltip">
+                    ?
+                </a>
+            </div>
+            <div class="tuto-step tuto-step-2">
+                <div class="tuto-step-text">
+                    2. Extract your data in the same folder as this app.
+                </div>
+            </div>
+            <div class="tuto-step tuto-step-3">
+                <div class="tuto-step-text">
+                    3. Choose your options and wait. (10 min - 1 hour)
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <div class="options-header">
+                <div class="options-header-divider divider"></div>
+                <div class="options-header-text">
+                    Options
+                </div>
+            </div>
+            <div class="options-inputs">
+                <div class="options-inputs-inputcontainer options-inputs-inputcontainer-outname">
+                    <img src="img/file_out.png"  class="options-inputs-inputcontainer-icon"></img>
+                    <input type="text" placeholder="Output file name" class="options-inputs-inputcontainer-input options-inputs-inputcontainer-outname-input">
+                </div>
+                <div class="options-inputs-inputcontainer options-inputs-inputcontainer-date">
+                    <img src="img/calendar.png"  class="options-inputs-inputcontainer-icon"></img>
+                    <label for="start">From : <br>
+                        <input type="date" name="start" placeholder="start" class="options-inputs-inputcontainer-input options-inputs-inputcontainer-date-input options-inputs-inputcontainer-date-input-start">
+                    </label>
+                    <label for="end">To : <br>
+                        <input type="date" name="end" class="options-inputs-inputcontainer-input options-inputs-inputcontainer-date-input options-inputs-inputcontainer-date-input-end">
+                    </label>
+                    <div class="options-inputs-inputcontainer-tooltip tooltip">?</div>
+                </div >
+            </div>
+            <div class="warning">Please fill the missing inputs</div>
+            <div class="options-analyse">
+                <div class="options-analyse-text">
+                    Analyse
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

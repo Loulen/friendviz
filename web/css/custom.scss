@@ -1,0 +1,128 @@
+*{
+    font-family: 'Muli', sans-serif;
+}
+
+body{
+    .header{
+        text-align: center;
+        &-title{
+            font-weight: 900;
+            font-size: 36px;
+        }
+        &-subtitle{
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+    .tuto{
+        margin: 15px 30px 0px;
+        &-header{
+            &-text{
+                text-align: center;
+                font-weight: 700;
+                font-size: 24px;
+            }
+        }
+        &-step{
+            &-text{
+                font-size: 18px;
+                line-height: 35px;
+            }
+            &-tooltip{
+                position: absolute;
+                left: 424px;
+                top: 163px;
+            }
+        }
+    }
+    .options{
+        margin: 15px 30px 0px;
+        &-header{
+            &-text{
+                text-align: center;
+                font-weight: 700;
+                font-size: 24px;
+            }
+        }
+        &-inputs{
+            &-inputcontainer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top : 20px;
+                img{
+                    object-fit: contain;
+                    width: 15%;
+                    height: 30px;
+                }
+                &-input{
+                    width: 85%;
+                    height: 30px;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: #E1E1E1;
+                    &::placeholder{
+                        padding-left: 15px;
+                    }
+                }
+            }
+            &-inputcontainer-date{
+                label{
+                    width: 39%;
+                }
+                label[for=start]{
+                    margin-right:-1px;
+                }
+                &-input{
+                    padding-left: 15px;
+                    margin-right: 15px;
+                    height: 30px;
+                }
+            }
+        }
+        &-analyse{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 100px;
+            width: 80%;
+            height: 70px;
+            background-color: #3F7DF5;
+            border-radius: 15px;
+            cursor: pointer;
+            &-text{
+                color: white;
+                font-size: 36px;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.warning{
+    color: red;
+    text-align: center;
+    display: none;
+    &.active{
+        display: block;
+    }
+}
+
+.divider{
+    height: 2px;
+    width: 100%;
+    background-color: #3F7DF5;
+    margin: auto;
+}
+
+.tooltip{
+    background-color: #3F7DF5;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 24px;
+    color: white;
+}
